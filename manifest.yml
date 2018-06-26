@@ -1,6 +1,10 @@
 ---
 applications:
  - name: GetStartedJava
+   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+   host: simple-website-${SSMECurrencyConvertor}
+   name: simple-website-${SSMECurrencyConvertor}
+   stack: cflinuxfs2
    random-route: true
    path: target/GetStartedJava.war
    memory: 256M
